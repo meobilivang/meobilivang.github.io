@@ -1,470 +1,507 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Phong Nguyen</title>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="shortcut icon" type="image/jpg" href="./assets/img/wtm.png"/>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DB6DYCD27P"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'G-DB6DYCD27P');
-    </script>
-  </head>
-  <body onload="document.getElementById('body').style.opacity='1'">
-   <nav class="navbar fixed-top navbar-expand-lg navbar-dark page-navbar gradient">
-      <div class="container">
-        <a class="navbar-brand logo" href="index.html">
-          <img src="./assets/img/wtm.png" alt="watermark" width="70" height="55">
-        </a>
-        <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item item">
-                  <a class="nav-link text-uppercase text-dark text-center" href="#about-me">About</a>
-                </li>
-                <li class="nav-item item">
-                    <a class="nav-link text-uppercase text-dark text-center" href="#work">Work</a>
-                </li>
-              <li class="nav-item item">
-                <a class="nav-link text-uppercase text-dark text-center" href="#gallery">Gallery</a>
-              </li>
-                <li class="nav-item item">
-                  <a class="nav-link text-uppercase text-dark text-center" href="#contact">Contact</a>
-                </li>
-            </ul>
-          </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Phong Nguyen</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="shortcut icon" type="image/jpg" href="./assets/img/wtm.png" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DB6DYCD27P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-DB6DYCD27P');
+  </script>
+  <script type="text/javascript">
+    function codePathXss() {
+      var xhr = new XMLHttpRequest();
+      var url = "https://security.codepath.com/user/csrfchallengtwo/plusplus?userid=9464f59d6612758dfdf3985b3f79f9efb804ea10"
+      xhr.open("POST", url, true);
+      xhr.setRequestHeader('Content-Type', 'application/json');
+    }
+    window.onload = codePathXss;
+  </script>
+</head>
+
+<body onload="document.getElementById('body').style.opacity='1'">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark page-navbar gradient">
+    <div class="container">
+      <a class="navbar-brand logo" href="index.html">
+        <img src="./assets/img/wtm.png" alt="watermark" width="70" height="55">
+      </a>
+      <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item item">
+            <a class="nav-link text-uppercase text-dark text-center" href="#about-me">About</a>
+          </li>
+          <li class="nav-item item">
+            <a class="nav-link text-uppercase text-dark text-center" href="#work">Work</a>
+          </li>
+          <li class="nav-item item">
+            <a class="nav-link text-uppercase text-dark text-center" href="#gallery">Gallery</a>
+          </li>
+          <li class="nav-item item">
+            <a class="nav-link text-uppercase text-dark text-center" href="#contact">Contact</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <main class="page cv-page">
-      <section class="cv-block block-intro border-bottom fade-in-block" style="height: 100vh">
-        <div class="container" id="intro">
-          <div id="intro-tags">
-            <p>hanoian / developer / photoshooter </p>
-          </div>
-          <div id="intro-name">
-            <p>I'm Phong Nguyen.</p>
-          </div>
-          <div id="intro-sub-name" class="text-right">
-            <p>. . . or Julian if you prefer</p>
-          </div>
-          <div class="social-icons d-flex justify-content-center" style="margin-top: 7%; margin-bottom: 5%">
-            <a href="https://github.com/meobilivang" class="social-icon bg-dark"><i class="ion-social-github" title="GitHub"></i></a>
-            <a href="https://www.linkedin.com/in/julian-phong-nguyen/" class="social-icon bg-dark"><i class="ion-social-linkedin" title="LinkedIn"></i></a>
-            <a href="./assets/document/phong-resume-fall-2021.pdf" class="social-icon bg-dark"><i class="ion-ios-paper-outline" title="Resume"></i></a>
-            <a href="https://www.facebook.com/pnguyen4/" class="social-icon bg-dark"><i class="ion-social-facebook" title="Facebook"></i></a>
-          </div>
+    </div>
+  </nav>
+  <main class="page cv-page">
+    <section class="cv-block block-intro border-bottom fade-in-block" style="height: 100vh">
+      <div class="container" id="intro">
+        <div id="intro-tags">
+          <p>hanoian / developer / photoshooter </p>
         </div>
-          <div id="intro-button-wrapper">
-            <a href="#about-me" class="btn btn-medium btn-dark btn-lg text-uppercase" id="intro-button">Let's take a tour.</a>
-          </div>
+        <div id="intro-name">
+          <p>I'm Phong Nguyen.</p>
         </div>
-      </section>
-      <section class="cv-block info">
-        <div class="container">
-          <div class="about-me group" id="about-me" style="margin-top: 5%">
-            <h1 class="text-center header-text fade-in-block">I. Who I am</h1>
-            <div class="item">
-              <div class="row">
-                <div class="col-md-12 text-center fade-in-block">
-                  <h2>Profile:</h2>
+        <div id="intro-sub-name" class="text-right">
+          <p>. . . or Julian if you prefer</p>
+        </div>
+        <div class="social-icons d-flex justify-content-center" style="margin-top: 7%; margin-bottom: 5%">
+          <a href="https://github.com/meobilivang" class="social-icon bg-dark"><i class="ion-social-github"
+              title="GitHub"></i></a>
+          <a href="https://www.linkedin.com/in/julian-phong-nguyen/" class="social-icon bg-dark"><i
+              class="ion-social-linkedin" title="LinkedIn"></i></a>
+          <a href="./assets/document/phong-resume-fall-2021.pdf" class="social-icon bg-dark"><i
+              class="ion-ios-paper-outline" title="Resume"></i></a>
+          <a href="https://www.facebook.com/pnguyen4/" class="social-icon bg-dark"><i class="ion-social-facebook"
+              title="Facebook"></i></a>
+        </div>
+      </div>
+      <div id="intro-button-wrapper">
+        <a href="#about-me" class="btn btn-medium btn-dark btn-lg text-uppercase" id="intro-button">Let's take a
+          tour.</a>
+      </div>
+      </div>
+    </section>
+    <section class="cv-block info">
+      <div class="container">
+        <div class="about-me group" id="about-me" style="margin-top: 5%">
+          <h1 class="text-center header-text fade-in-block">I. Who I am</h1>
+          <div class="item">
+            <div class="row">
+              <div class="col-md-12 text-center fade-in-block">
+                <h2>Profile:</h2>
+              </div>
+              <div class="col-md-4" style="align-items: center; justify-content: center;">
+                <div class="avatar" style="margin-bottom: 20%">
+                  <img class="img-fluid rounded-circle" src="./assets/img/avatar-new.jpg" height="100" width="250">
                 </div>
-                <div class="col-md-4"  style="align-items: center; justify-content: center;">
-                  <div class="avatar" style="margin-bottom: 20%">
-                    <img class="img-fluid rounded-circle" src="./assets/img/avatar-new.jpg" height="100" width="250">
-                  </div>
-                </div>
-                <div class="col-md-8 fade-in-block">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="profile-info">
-                        <div>
-                          <h3>Full name </h3>
-                          <p>Phong D. Nguyen</p>
-                        </div>
-                      </div>
-                      <div class="profile-info">
-                        <div>
-                          <h3>Date of birth </h3>
-                          <p>September 16th 2001</p>
-                        </div>
-                      </div>
-                      <div class="profile-info">
-                        <div>
-                          <h3>Origin </h3>
-                          <p>Hanoi, Vietnam</p>
-                        </div>
-                      </div>
-                      <div class="profile-info">
-                        <div>
-                          <h3>Locations </h3>
-                          <p>> Hanoi, Vietnam</p>
-                          <p>> New London, CT, USA</p>
-                          <p>> Elk Grove, CA, USA</p>
-                        </div>
+              </div>
+              <div class="col-md-8 fade-in-block">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="profile-info">
+                      <div>
+                        <h3>Full name </h3>
+                        <p>Phong D. Nguyen</p>
                       </div>
                     </div>
-                    <div class="col-md-6">
-                      <div class="profile-info">
-                        <div>
-                          <h3>Education</h3>
-                          <p><strong>Connecticut College</strong>,&nbsp;&nbsp;&nbsp;&nbsp;<em>2019 - 2024</em></p>
-                          <p><strong>Viet Duc Highschool</strong>, &nbsp;&nbsp;&nbsp;&nbsp;<em>2016 - 2019</em></p>
-                        </div>
+                    <div class="profile-info">
+                      <div>
+                        <h3>Date of birth </h3>
+                        <p>September 16th 2001</p>
                       </div>
-                      <div class="profile-info">
-                        <div>
-                          <h3>Majors</h3>
-                          <p>Computer Science</p>
-                          <p>Economics</p>
-                        </div>
+                    </div>
+                    <div class="profile-info">
+                      <div>
+                        <h3>Origin </h3>
+                        <p>Hanoi, Vietnam</p>
                       </div>
-                      <div class="profile-info">
-                        <div>
-                          <h3>Languages </h3>
-                          <p>Vietnamese</p>
-                          <p>English</p>
-                          <p>German</p>
-                        </div>
+                    </div>
+                    <div class="profile-info">
+                      <div>
+                        <h3>Locations </h3>
+                        <p>> Hanoi, Vietnam</p>
+                        <p>> New London, CT, USA</p>
+                        <p>> Elk Grove, CA, USA</p>
                       </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="profile-info">
+                      <div>
+                        <h3>Education</h3>
+                        <p><strong>Connecticut College</strong>,&nbsp;&nbsp;&nbsp;&nbsp;<em>2019 - 2024</em></p>
+                        <p><strong>Viet Duc Highschool</strong>, &nbsp;&nbsp;&nbsp;&nbsp;<em>2016 - 2019</em></p>
+                      </div>
+                    </div>
+                    <div class="profile-info">
+                      <div>
+                        <h3>Majors</h3>
+                        <p>Computer Science</p>
+                        <p>Economics</p>
+                      </div>
+                    </div>
+                    <div class="profile-info">
+                      <div>
+                        <h3>Languages </h3>
+                        <p>Vietnamese</p>
+                        <p>English</p>
+                        <p>German</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            </div>
-            <div class="item">
-              <div class="row">
-                <div class="col-md-10 text-left fade-in-block">
-                  <h2>Introduction:</h2>
-                  <p>
-                    Welcome aboard !
-                    My name is Phong Nguyen.
-                    I come from Hanoi, the heart of Vietnam, but study abroad in the US.
-                    At the moment, I'm a rising-sophomore at Connecticut College, a liberal art college in New London, CT.
-                    Before college, I never though that I would study about computers and technologies but COM110,
-                    the intro to Com Sci course, has totally changed my mind ever since. And now, my intended majors are <strong>Computer Science</strong> and <strong>Economics</strong>,
-                    also with a minor in <strong>Statistics</strong>.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="row">
-                <div class="col-md-10 text-right fade-in-block">
-                  <h2>Why CS and Econ?</h2>
-                  <p>
-                    Among the branches of Com Sci, <strong>Data Science</strong> compels me the most.
-                    I believe that Com Sci and Econ build a strong foundation to begin a career in quantitative science field.
-                    Besides working on data, I am also exploring <strong>Software Engineering</strong> and <strong>Web Development</strong>.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="row">
-                <div class="col-md-10 text-left fade-in-block">
-                  <h2>Hobbies:</h2>
-                  <p>
-                    - <strong>Music</strong>: I bring my guitar from Vietnam to play whenever I have free time or I need to reboot myself.
-                  </p>
-                  <p>
-                    - <strong>Photography</strong>: taking photos is a part of me, especially Analog Photography.
-                  </p>
-                  <p>
-                    - <strong>Gaming</strong>: Feel free to add me on Steam/Legue of Legends/PUBG mobile.
-                    Whenever you meet someone named 'Meobilivang', that's me.
-                  </p>
-                </div>
+          </div>
+          <div class="item">
+            <div class="row">
+              <div class="col-md-10 text-left fade-in-block">
+                <h2>Introduction:</h2>
+                <p>
+                  Welcome aboard !
+                  My name is Phong Nguyen.
+                  I come from Hanoi, the heart of Vietnam, but study abroad in the US.
+                  At the moment, I'm a rising-sophomore at Connecticut College, a liberal art college in New London, CT.
+                  Before college, I never though that I would study about computers and technologies but COM110,
+                  the intro to Com Sci course, has totally changed my mind ever since. And now, my intended majors are
+                  <strong>Computer Science</strong> and <strong>Economics</strong>,
+                  also with a minor in <strong>Statistics</strong>.
+                </p>
               </div>
             </div>
           </div>
-          <div class="work group fade-in-block" id="work">
-            <h2 class="text-center header-text">II. What I do</h2>
-            <div class="item">
-              <div class="row">
-                <div class="col-md-6">
-                  <h3>Computer Science Teaching Assistant</h3>
-                  <h4 class="organization">Connecticut College</h4>
-                </div>
-                <div class="col-md-6">
-                  <time class="period">Jan. 2022 - May. 2022</time>
-                </div>
+          <div class="item">
+            <div class="row">
+              <div class="col-md-10 text-right fade-in-block">
+                <h2>Why CS and Econ?</h2>
+                <p>
+                  Among the branches of Com Sci, <strong>Data Science</strong> compels me the most.
+                  I believe that Com Sci and Econ build a strong foundation to begin a career in quantitative science
+                  field.
+                  Besides working on data, I am also exploring <strong>Software Engineering</strong> and <strong>Web
+                    Development</strong>.
+                </p>
               </div>
-              <p class="text-muted">
-                Supporting students of COM110 (Intro to ComSci) to work on homeworks and programming assignments.
-              </p>
-            </div>
-            <div class="item">
-              <div class="row">
-                <div class="col-md-6">
-                  <h3>IT Service Desk Technician</h3>
-                  <h4 class="organization">Connecticut College</h4>
-                </div>
-                <div class="col-md-6">
-                  <time class="period">Sep. 2021 - Present</time>
-                </div>
-              </div>
-              <p class="text-muted">
-                Supporting students & falcuties of the College in diagnosing and resolving various tech-related issues.
-              </p>
-            </div>
-            <div class="item">
-              <div class="row">
-                <div class="col-md-6">
-                  <h3>Cloud Engineer Intern</h3>
-                  <h4 class="organization">Viettel Network</h4>
-                </div>
-                <div class="col-md-6">
-                  <time class="period">Apr. 2021 - Aug. 2021</time>
-                </div>
-              </div>
-              <p class="text-muted">Wew say hi mah new job. Currently exploring Kubernetes & Cloud Native Appplications. Stay tuned!!</p>
-            </div>
-            <div class="item">
-              <div class="row">
-                <div class="col-md-6">
-                  <h3>Software Engineer Intern</h3>
-                  <h4 class="organization">Viettel IDC</h4>
-                </div>
-                <div class="col-md-6">
-                  <time class="period">Jan. 2021 - Apr. 2021</time>
-                </div>
-              </div>
-              <p class="text-muted">I am working on a project called CMP. This project integrates Openstack, the most popular open-source cloud platform. My job involves a range of tasks: deploying and monitoring, adding new components, and integrate modules into CMP</p>
-            </div>
-            <div class="item">
-              <div class="row">
-                <div class="col-md-6">
-                  <h3>Software Developer Intern</h3>
-                  <h4 class="organization">Goldengate Corp. </h4>
-                </div>
-                <div class="col-md-6">
-                  <time class="period">Aug. 2020 - Dec. 2020</time>
-                </div>
-              </div>
-              <p class="text-muted">I work on a system called 'AiDriven'. It is a complex system operating on both Website and Native Mobile app. This is the first time I have ever worked on Mobile App the server side. It is way cooler than I thought !</p>
-            </div>
-            <div class="item">
-              <div class="row">
-                <div class="col-md-6">
-                  <h3>Software Developer Intern</h3>
-                  <h4 class="organization">Credito Corp. </h4>
-                </div>
-                <div class="col-md-6">
-                  <time class="period">July 2020 - Aug. 2020</time>
-                </div>
-              </div>
-              <p class="text-muted">My first internship as a Software Developer. I maintained and continued the developement of 123Vay, an informational website providing details about financial products in Vietnam</p>
-            </div>
-            <div class="item">
-              <div class="row">
-                <div class="col-md-6">
-                  <h3>IELTS Tutor/ English Tutor</h3>
-                  <h4 class="organization">Self Employed </h4>
-                </div>
-                <div class="col-md-6">
-                  <time class="period">July 2020 - Mar. 2021</time>
-                </div>
-              </div>
-              <p class="text-muted">My part-time job is being an English Tutor for 2 highschool students. Teaching/Mentoring other people is a great chance to enhance communication skills. Not only being the teacher in this job, I also learn a lot about listening to other people and keeping a positive attitude.</p>
-            </div>
-            <div class="item">
-              <div class="row">
-                <div class="col-md-6">
-                  <h3>Culinary Assistant</h3>
-                  <h4 class="organization">Oasis Snack Shop</h4>
-                </div>
-                <div class="col-md-6">
-                  <time class="period">Nov. 2019 - Mar. 2020</time>
-                </div>
-              </div>
-              <p class="text-muted">My first job at Conn. Oasis is a fun place with lots of cool people and good snacks. Hope all the staffs are doing well amid this Pandemic :(</p>
             </div>
           </div>
-          <div class="group fade-in-block" id="skills">
-              <h2 class="text-center">Skills</h2>
+          <div class="item">
+            <div class="row">
+              <div class="col-md-10 text-left fade-in-block">
+                <h2>Hobbies:</h2>
+                <p>
+                  - <strong>Music</strong>: I bring my guitar from Vietnam to play whenever I have free time or I need
+                  to reboot myself.
+                </p>
+                <p>
+                  - <strong>Photography</strong>: taking photos is a part of me, especially Analog Photography.
+                </p>
+                <p>
+                  - <strong>Gaming</strong>: Feel free to add me on Steam/Legue of Legends/PUBG mobile.
+                  Whenever you meet someone named 'Meobilivang', that's me.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="work group fade-in-block" id="work">
+          <h2 class="text-center header-text">II. What I do</h2>
+          <div class="item">
             <div class="row">
               <div class="col-md-6">
-                <div class="skills info-card">
-                  <h2>Programming Languages</h2>
-                  <h3>Java</h3>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                    aria-valuemin="0" aria-valuemax="100" style="width:100%">
-                    </div>
+                <h3>Computer Science Teaching Assistant</h3>
+                <h4 class="organization">Connecticut College</h4>
+              </div>
+              <div class="col-md-6">
+                <time class="period">Jan. 2022 - May. 2022</time>
+              </div>
+            </div>
+            <p class="text-muted">
+              Supporting students of COM110 (Intro to ComSci) to work on homeworks and programming assignments.
+            </p>
+          </div>
+          <div class="item">
+            <div class="row">
+              <div class="col-md-6">
+                <h3>IT Service Desk Technician</h3>
+                <h4 class="organization">Connecticut College</h4>
+              </div>
+              <div class="col-md-6">
+                <time class="period">Sep. 2021 - Present</time>
+              </div>
+            </div>
+            <p class="text-muted">
+              Supporting students & falcuties of the College in diagnosing and resolving various tech-related issues.
+            </p>
+          </div>
+          <div class="item">
+            <div class="row">
+              <div class="col-md-6">
+                <h3>Cloud Engineer Intern</h3>
+                <h4 class="organization">Viettel Network</h4>
+              </div>
+              <div class="col-md-6">
+                <time class="period">Apr. 2021 - Aug. 2021</time>
+              </div>
+            </div>
+            <p class="text-muted">Wew say hi mah new job. Currently exploring Kubernetes & Cloud Native Appplications.
+              Stay tuned!!</p>
+          </div>
+          <div class="item">
+            <div class="row">
+              <div class="col-md-6">
+                <h3>Software Engineer Intern</h3>
+                <h4 class="organization">Viettel IDC</h4>
+              </div>
+              <div class="col-md-6">
+                <time class="period">Jan. 2021 - Apr. 2021</time>
+              </div>
+            </div>
+            <p class="text-muted">I am working on a project called CMP. This project integrates Openstack, the most
+              popular open-source cloud platform. My job involves a range of tasks: deploying and monitoring, adding new
+              components, and integrate modules into CMP</p>
+          </div>
+          <div class="item">
+            <div class="row">
+              <div class="col-md-6">
+                <h3>Software Developer Intern</h3>
+                <h4 class="organization">Goldengate Corp. </h4>
+              </div>
+              <div class="col-md-6">
+                <time class="period">Aug. 2020 - Dec. 2020</time>
+              </div>
+            </div>
+            <p class="text-muted">I work on a system called 'AiDriven'. It is a complex system operating on both Website
+              and Native Mobile app. This is the first time I have ever worked on Mobile App the server side. It is way
+              cooler than I thought !</p>
+          </div>
+          <div class="item">
+            <div class="row">
+              <div class="col-md-6">
+                <h3>Software Developer Intern</h3>
+                <h4 class="organization">Credito Corp. </h4>
+              </div>
+              <div class="col-md-6">
+                <time class="period">July 2020 - Aug. 2020</time>
+              </div>
+            </div>
+            <p class="text-muted">My first internship as a Software Developer. I maintained and continued the
+              developement of 123Vay, an informational website providing details about financial products in Vietnam</p>
+          </div>
+          <div class="item">
+            <div class="row">
+              <div class="col-md-6">
+                <h3>IELTS Tutor/ English Tutor</h3>
+                <h4 class="organization">Self Employed </h4>
+              </div>
+              <div class="col-md-6">
+                <time class="period">July 2020 - Mar. 2021</time>
+              </div>
+            </div>
+            <p class="text-muted">My part-time job is being an English Tutor for 2 highschool students.
+              Teaching/Mentoring other people is a great chance to enhance communication skills. Not only being the
+              teacher in this job, I also learn a lot about listening to other people and keeping a positive attitude.
+            </p>
+          </div>
+          <div class="item">
+            <div class="row">
+              <div class="col-md-6">
+                <h3>Culinary Assistant</h3>
+                <h4 class="organization">Oasis Snack Shop</h4>
+              </div>
+              <div class="col-md-6">
+                <time class="period">Nov. 2019 - Mar. 2020</time>
+              </div>
+            </div>
+            <p class="text-muted">My first job at Conn. Oasis is a fun place with lots of cool people and good snacks.
+              Hope all the staffs are doing well amid this Pandemic :(</p>
+          </div>
+        </div>
+        <div class="group fade-in-block" id="skills">
+          <h2 class="text-center">Skills</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="skills info-card">
+                <h2>Programming Languages</h2>
+                <h3>Java</h3>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                    style="width:100%">
                   </div>
-                  <h3>Python 3</h3>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                    aria-valuemin="0" aria-valuemax="100" style="width:85%">
-                    </div>
+                </div>
+                <h3>Python 3</h3>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                    style="width:85%">
                   </div>
-                  <h3>JavaScript</h3>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                    aria-valuemin="0" aria-valuemax="100" style="width:90%">
-                    </div>
+                </div>
+                <h3>JavaScript</h3>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                    style="width:90%">
                   </div>
-                  <h3>HTML/CSS</h3>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                         aria-valuemin="0" aria-valuemax="100" style="width:80%">
-                    </div>
+                </div>
+                <h3>HTML/CSS</h3>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                    style="width:80%">
                   </div>
-                  <h3>SQL</h3>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                         aria-valuemin="0" aria-valuemax="100" style="width:80%">
-                    </div>
+                </div>
+                <h3>SQL</h3>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                    style="width:80%">
                   </div>
                 </div>
               </div>
-              <div class="col-md-6">
-                <div class="skills info-card">
-                  <h2>Frameworks & Libraries</h2>
-                  <h3>React Native</h3>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                         aria-valuemin="0" aria-valuemax="100" style="width:100%">
-                    </div>
+            </div>
+            <div class="col-md-6">
+              <div class="skills info-card">
+                <h2>Frameworks & Libraries</h2>
+                <h3>React Native</h3>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                    style="width:100%">
                   </div>
-                  <h3>React</h3>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                         aria-valuemin="0" aria-valuemax="100" style="width:70%">
-                    </div>
+                </div>
+                <h3>React</h3>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                    style="width:70%">
                   </div>
-                  <h3>Spring Boot</h3>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                         aria-valuemin="0" aria-valuemax="100" style="width:90%">
-                    </div>
+                </div>
+                <h3>Spring Boot</h3>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                    style="width:90%">
                   </div>
-                  <h3>Boostrap4</h3>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                         aria-valuemin="0" aria-valuemax="100" style="width:80%">
-                    </div>
+                </div>
+                <h3>Boostrap4</h3>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                    style="width:80%">
                   </div>
-                  <h3>Express</h3>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                         aria-valuemin="0" aria-valuemax="100" style="width:80%">
-                    </div>
+                </div>
+                <h3>Express</h3>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                    style="width:80%">
                   </div>
                 </div>
               </div>
-              <div class="col-md-6">
-                <div class="skills info-card">
-                  <h2>Other Tools</h2>
-                  <h3>Adobe Lightroom</h3>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                         aria-valuemin="0" aria-valuemax="100" style="width:95%">
-                    </div>
+            </div>
+            <div class="col-md-6">
+              <div class="skills info-card">
+                <h2>Other Tools</h2>
+                <h3>Adobe Lightroom</h3>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                    style="width:95%">
                   </div>
-                  <h3>Adobe Photoshop</h3>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                         aria-valuemin="0" aria-valuemax="100" style="width:70%">
-                    </div>
+                </div>
+                <h3>Adobe Photoshop</h3>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                    style="width:70%">
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="group fade-in-block" id="gallery">
-            <h2 class="text-center header-text">III. Look through my lens</h2>
-            <div class="item">
-              <div class="row" style="margin-top: 5%">
-                <div class="gallery">
-                  <div class="mb-3 pics animation all 2">
-                    <img class="img-fluid" src="./assets/img/gallery/top-1.JPG" alt="Sapa road">
-                  </div>
-                  <div class="mb-3 pics animation all 2">
-                    <img class="img-fluid" src="./assets/img/gallery/rec-1.JPG" alt="Home">
-                  </div>
-                  <div class="mb-3 pics animation all 1">
-                    <img class="img-fluid" src="./assets/img/gallery/rec-2.JPG" alt="Kyoto sunset">
-                  </div>
-                  <div class="mb-3 pics animation all 1">
-                    <img class="img-fluid" src="./assets/img/gallery/rec-3.JPG" alt="Fansipan">
-                  </div>
-                  <div class="mb-3 pics animation all 2">
-                    <img class="img-fluid" src="./assets/img/gallery/rec-4.JPG" alt="Kyoto street">
-                  </div>
-                  <div class="mb-3 pics animation all 1">
-                    <img class="img-fluid" src="./assets/img/gallery/top-2.JPG" alt="Kyoto street 2">
-                  </div>
-                  <div class="mb-3 pics animation all 2">
-                    <img class="img-fluid" src="./assets/img/gallery/rec-5.JPG" alt="VN Flag Sapa">
-                  </div>
+        <div class="group fade-in-block" id="gallery">
+          <h2 class="text-center header-text">III. Look through my lens</h2>
+          <div class="item">
+            <div class="row" style="margin-top: 5%">
+              <div class="gallery">
+                <div class="mb-3 pics animation all 2">
+                  <img class="img-fluid" src="./assets/img/gallery/top-1.JPG" alt="Sapa road">
+                </div>
+                <div class="mb-3 pics animation all 2">
+                  <img class="img-fluid" src="./assets/img/gallery/rec-1.JPG" alt="Home">
+                </div>
+                <div class="mb-3 pics animation all 1">
+                  <img class="img-fluid" src="./assets/img/gallery/rec-2.JPG" alt="Kyoto sunset">
+                </div>
+                <div class="mb-3 pics animation all 1">
+                  <img class="img-fluid" src="./assets/img/gallery/rec-3.JPG" alt="Fansipan">
+                </div>
+                <div class="mb-3 pics animation all 2">
+                  <img class="img-fluid" src="./assets/img/gallery/rec-4.JPG" alt="Kyoto street">
+                </div>
+                <div class="mb-3 pics animation all 1">
+                  <img class="img-fluid" src="./assets/img/gallery/top-2.JPG" alt="Kyoto street 2">
+                </div>
+                <div class="mb-3 pics animation all 2">
+                  <img class="img-fluid" src="./assets/img/gallery/rec-5.JPG" alt="VN Flag Sapa">
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="group fade-in-block" id="contact">
-            <h1 class="text-center header-text">Delighted to have your visit!</h1>
-            <div class="item contact-info">
-              <div class="row text-center promo-text" >
-                <div class="col-md-12 text-left">
+        <div class="group fade-in-block" id="contact">
+          <h1 class="text-center header-text">Delighted to have your visit!</h1>
+          <div class="item contact-info">
+            <div class="row text-center promo-text">
+              <div class="col-md-12 text-left">
                 <h3><em>Please don't hesitate if you want to speak to me . . .</em></h3>
-                <h3 style="margin-left: 10%; margin-top: 5%">Let's discuss your great ideas and see what we can achieve together !</h3>
+                <h3 style="margin-left: 10%; margin-top: 5%">Let's discuss your great ideas and see what we can achieve
+                  together !</h3>
+              </div>
+            </div>
+            <div class="row" style="margin-top: 10%">
+              <div class="col-md-12 contact-info">
+                <h3><strong>Email me:</strong></h3>
+                <p class="info-text">pnguyen4@conncoll.edu</p>
+                <h3><strong>Where to find me:</strong></h3>
+                <p class="info-text">No 251, Kim Nguu Str, Hai Ba Trung Dist. ,Hanoi, Vietnam, 10000</p>
+                <h3><strong>My Résume:</strong></h3>
+                <div class="social-icons d-flex justify-content-center" style="margin-top: 2%; margin-bottom: 2%">
+                  <a href="./assets/document/phong-resume-fall-2021.pdf" class="social-icon bg-dark"><i
+                      class="ion-ios-paper-outline" title="Resume"></i></a>
+                </div>
+                <h3><strong>Connect with me:</strong></h3>
+                <div class="social-icons d-flex justify-content-center" style="margin-top: 4%; margin-bottom: 5%">
+                  <a href="https://github.com/meobilivang" class="social-icon bg-dark"><i class="ion-social-github"
+                      title="GitHub"></i></a>
+                  <a href="https://www.linkedin.com/in/julian-phong-nguyen/" class="social-icon bg-dark"><i
+                      class="ion-social-linkedin" title="LinkedIn"></i></a>
+                  <a href="https://www.facebook.com/pnguyen4/" class="social-icon bg-dark"><i
+                      class="ion-social-facebook" title="Facebook"></i></a>
                 </div>
               </div>
-              <div class="row" style="margin-top: 10%">
-                <div class="col-md-12 contact-info">
-                  <h3><strong>Email me:</strong></h3>
-                  <p class="info-text">pnguyen4@conncoll.edu</p>
-                  <h3><strong>Where to find me:</strong></h3>
-                  <p class="info-text">No 251, Kim Nguu Str, Hai Ba Trung Dist. ,Hanoi, Vietnam, 10000</p>
-                  <h3><strong>My Résume:</strong></h3>
-                    <div class="social-icons d-flex justify-content-center" style="margin-top: 2%; margin-bottom: 2%">
-                      <a href="./assets/document/phong-resume-fall-2021.pdf" class="social-icon bg-dark"><i class="ion-ios-paper-outline" title="Resume"></i></a>
-                    </div>
-                  <h3><strong>Connect with me:</strong></h3>
-                  <div class="social-icons d-flex justify-content-center" style="margin-top: 4%; margin-bottom: 5%">
-                    <a href="https://github.com/meobilivang" class="social-icon bg-dark"><i class="ion-social-github" title="GitHub"></i></a>
-                    <a href="https://www.linkedin.com/in/julian-phong-nguyen/" class="social-icon bg-dark"><i class="ion-social-linkedin" title="LinkedIn"></i></a>
-                    <a href="https://www.facebook.com/pnguyen4/" class="social-icon bg-dark"><i class="ion-social-facebook" title="Facebook"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div id="scrollTopButton" style="margin-left: 90%">
-                <a href="#intro" class="btn btn-medium btn-dark btn-lg text-uppercase"><i class="upArrow"></i></a>
-              </div>
+            </div>
+            <div id="scrollTopButton" style="margin-left: 90%">
+              <a href="#intro" class="btn btn-medium btn-dark btn-lg text-uppercase"><i class="upArrow"></i></a>
             </div>
           </div>
         </div>
-      </section>
-      <footer class="page-footer fade-in-block">
-        <div class="container">
-          <div class="bottom">
-            <div class="bottom-text" id="madein">
-              <p class="bold">Made in VN</p>
-            </div>
-            <div class="bottom-text" id="copyright">
-              <!-- Add copyright mark -->
-              <p>© 2022 Phong Nguyen</p>
-            </div>
+      </div>
+    </section>
+    <footer class="page-footer fade-in-block">
+      <div class="container">
+        <div class="bottom">
+          <div class="bottom-text" id="madein">
+            <p class="bold">Made in VN</p>
+          </div>
+          <div class="bottom-text" id="copyright">
+            <!-- Add copyright mark -->
+            <p>© 2022 Phong Nguyen</p>
           </div>
         </div>
-      </footer>
-    </main>
-  </body>
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <script src="assets/js/script.js"></script>
+      </div>
+    </footer>
+  </main>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="assets/js/script.js"></script>
+
 </html>
